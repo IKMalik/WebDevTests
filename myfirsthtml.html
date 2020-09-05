@@ -4,6 +4,8 @@
 	<title>My First HTML page</title>
 	<meta name='description' content='first page'>
 	<meta name='keywords' content='html testing, html'>
+	<!-- Use a style css sheet to avoid need for inline changes-->
+	<link rel="stylesheet" href="mycssfile.css">
 </head>
 
 <body>
@@ -20,12 +22,15 @@
 
 		</nav>
 
-		<h1> Hello World </h1>
+		<!-- only use id for specific, better to use classes -->
+		<h1 id="mainheader"> Hello World </h1>
+		<h1> Alternate header 1 type text </h1>
 		<h2> Smaller Hello World </h2>
 		
 	</header>
 
-	<main>
+	<!-- Using multiple classes for css instead of id/inline-->
+	<main class="text_formatting border_styling">
 
 		<article>
 			<section>
@@ -33,7 +38,9 @@
 						<!-- tags for irrelivent content to website e.g ads -->
 					</aside>
 
-					<p> This is a paragraph  </p>
+					<!-- Adjusting margins in css via inline -->
+
+					<p style="padding:20px;"> This is a paragraph  </p>
 
 					<hr/> 
 
@@ -51,10 +58,10 @@
 		</article>
 			<section>
 				
-			<!-- now to use some basic CSS -->
+			<!-- now to use some basic CSS with inline styling for colours-->
 
-			<P style="color:red; background-color: green"> Some red text a green background </P>
-			<p style="color: blue"> Some styled blue text </p>
+			<P> Some red text a green background </P>
+			<p> Some styled blue text </p>
 
 			<!-- W3School has a colour list to find many colours -->
 			</section>
